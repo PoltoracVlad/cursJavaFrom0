@@ -47,25 +47,13 @@ public class Tema1 {
         System.out.println("Ex. 12: " + frz1);
 
         //Ex. 13:
-        String frz2;
-        frz2 = frz.substring(0, frz.length() - (frz.length() - 5)).concat(frz.substring(frz.length() - 5));
-        System.out.println("Ex. 13: " + frz2);
+        System.out.println("Ex. 13: " + frz.substring(0, 5) + frz.substring(frz.length() - 5));
 
         //Ex. 14:
-        String findFrz = "the";
-        int lastIndex = 0;
-        int count = 0;
-        while (lastIndex != -1) {
-            lastIndex = frz.indexOf(findFrz, lastIndex);
-            if (lastIndex != -1) {
-                count++;
-                lastIndex += findFrz.length();
-            }
-        }
-        System.out.println("Ex. 14: " + count);
+        String findFrz = frz.replaceAll("the", "");
+        System.out.println("Ex. 14: " + (frz.length() - findFrz.length()) / 3);
 
         //Ex. 15:
-        String frz3 = frz.replaceAll("the", "THE");
-        System.out.println("Ex. 15: " + frz3);
+        System.out.println("Ex. 15: " + frz.replaceAll("the", "THE"));
     }
 }
