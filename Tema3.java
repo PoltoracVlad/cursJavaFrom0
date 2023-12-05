@@ -149,6 +149,7 @@ public class Tema3 {
             case 3, 4, 5: System.out.println("Ex. 12: Primavara"); break;
             case 6, 7, 8: System.out.println("Ex. 12: Vara"); break;
             case 9, 10, 11: System.out.println("Ex. 12: Toamna"); break;
+            default: System.out.println("Ex. 12: Nu e luna buna");
         }
     }
 }
